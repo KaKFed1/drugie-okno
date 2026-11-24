@@ -2,8 +2,45 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        mc:Ignorable="d" d:DesignWidth="640" d:DesignHeight="420"
         x:Class="okno.MainWindow"
-        Title="okno">
-    <TextBlock Text="Warsztat" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        Title="IBM 5150 TERMINAL v1.0"
+        Background="#0A0A0A"
+        Width="640"
+        Height="420"
+        WindowStartupLocation="CenterScreen">
+
+  <Border BorderBrush="#33FF33"
+          BorderThickness="2"
+          Padding="24"
+          HorizontalAlignment="Center"
+          VerticalAlignment="Center">
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="12">
+      <TextBlock Text="Warsztat"
+                 HorizontalAlignment="Center"
+                 Foreground="#33FF33"
+                 FontFamily="Consolas, monospace"
+                 FontSize="24" />
+      <TextBlock Text="640 KB RAM OK"
+                 HorizontalAlignment="Center"
+                 Foreground="#1E9E1E"
+                 FontFamily="Consolas, monospace"
+                 FontSize="14" />
+      <TextBox Watermark="C:\&gt; wpisz komende..."
+               Foreground="#33FF33"
+               FontFamily="Consolas, monospace"
+               Width="280" />
+      <Button Content="[ EXECUTE ]"
+              HorizontalAlignment="Center"
+              FontFamily="Consolas, monospace"
+              Background="#112211"
+              Foreground="#33FF33"
+              BorderBrush="#33FF33"
+              BorderThickness="1" />
+      <Slider Minimum="0" Maximum="100" Value="80" Width="220" />
+      <CheckBox Content="TURBO MODE (4.77 MHz)"
+                Foreground="#33FF33"
+                FontFamily="Consolas, monospace" />
+    </StackPanel>
+  </Border>
 </Window>
